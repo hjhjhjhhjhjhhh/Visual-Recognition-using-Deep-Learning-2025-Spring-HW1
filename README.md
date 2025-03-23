@@ -3,7 +3,8 @@
 
 | StudentID |   110550067 |
 | --------- | :-----|
-| **Name**  |    **<font face = STKaiti>簡秉霖** |
+| **Name**  |    **簡秉霖** |
+
 
 ## Introduction
 
@@ -12,18 +13,21 @@ In this assignment, we tackle image classification with 100 classes using a data
 ## How to install
 - Python version: 3.10
 
-- Download required packages.
+- Download required packages.<br>
   ` pip install requirements.txt`
-- Check the official Pytorch website to download torch-related packages, ensuring you select the correct CUDA version (11.8 in this case).
+- Check the official Pytorch website to download torch-related packages, ensuring you select the correct CUDA version (11.8 in this case). <br>
 `
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 `
 
 ## How to run
-- For training: ` python train.py`
-  The model weights will be store at `resnext_best.pth`
+- Training: <br>`python train.py`
   
-- For testing: `python test.py`
+- Testing: <br>`python test.py`
 
 ## Performance snapshot
-![The public prediction score](snapshot/performance.jpg)
+![The public prediction score](snapshot/performance.png)
+
+
+
+

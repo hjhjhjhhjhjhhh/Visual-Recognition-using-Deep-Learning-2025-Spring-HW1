@@ -1,0 +1,11 @@
+train.txt
+train2.txt
+
+*.pth
+*.ckpt
+*.zip
+
+*.csv
+*.log
+*.json
+*.yaml

@@ -17,7 +17,7 @@ transform = transforms.Compose([
 ])
 
 data_dir = "../vrdl_hw1/data" ## put the correct path here
-val_dataset = datasets.ImageFolder(root=f"{data_dir}/val", transform=transform["val"])
+val_dataset = datasets.ImageFolder(root=f"{data_dir}/val", transform=transform)
 idx_to_class = {v: k for k, v in val_dataset.class_to_idx.items()}
 
 model = models.resnext50_32x4d(weights='DEFAULT')
@@ -40,7 +40,7 @@ for img_name in image_list:
     if img_name.lower().endswith((".png", ".jpg", ".jpeg")): 
         img_path = os.path.join(os.path.join(data_dir, 'test'), img_name)
         image = Image.open(img_path).convert("RGB")
-        image = transform['val'](image).unsqueeze(0).to(device)
+        image = transform(image).unsqueeze(0).to(device)
 
         # Inference
         with torch.no_grad():

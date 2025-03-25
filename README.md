@@ -15,7 +15,7 @@ In this assignment, we tackle image classification with 100 classes using a data
 
 - Download required packages.<br>
   `pip install -r requirements.txt`
-- Check the official Pytorch website to download torch-related packages, ensuring you select the correct CUDA version (11.8 in this case). <br>
+- Check the official Pytorch website to download torch-related packages, ensuring you select the correct CUDA version (11.8 in my case). <br>
 `
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 `
